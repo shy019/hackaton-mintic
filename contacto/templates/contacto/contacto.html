@@ -1,0 +1,42 @@
+{% extends "ProyectoWeb/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenedorformulario">
+
+
+    {% if "valido"  in request.GET %}
+
+
+    <div class="contenedoralerta">
+
+
+        <!--<p style="color: thistle;">informacion enviada correctamente</p>-->
+        <p style="color: rgb(255, 255, 255); margin: 5px auto" type="text-align: center"> &nbsp &nbsp   &nbsp Informacion Enviada Correctamente</p>
+
+
+    </div>
+
+
+    {%  endif %}
+    
+    <form action="" method="POST" style="text-align: center;">
+
+        {%csrf_token %}
+        <table style="color: thistle;margin: 20px auto" type="text" >
+
+            
+                 {{miformulario.as_table}}
+        
+        
+        </table>
+        <input type="submit" value="ENVIAR" class="btn" style="width: 150px;">
+
+
+    </form> 
+
+</div>      
+
+    {% endblock %}
