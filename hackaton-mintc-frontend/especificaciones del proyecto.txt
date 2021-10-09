@@ -1,0 +1,15 @@
+
+accesibilidad hacia personas mayores
+texto grande
+botones grandes
+
+como desplegar en bootstrap un chatbox
+dos pantallas
+1. login
+2. chatbox en el centro
+
+creacion de usuario:
+Nombre
+cedula
+correo
+contraseña
