@@ -1,0 +1,12 @@
+negro 1c1b1b
+cafe #9f7d54
+amarillo #e5952a
+rojo #dd6422
+blanco f2f2f2
+
+
+mas oscuro: #494646
+header: #7D7878
+fondo: #A5A1A1
+burbujas: #9f7d54
+botones: #e5952a
