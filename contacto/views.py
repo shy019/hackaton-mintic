@@ -26,8 +26,8 @@ def contacto(request):
             contenido=request.POST.get("contenido")
 
 
-            email=EmailMessage("Mensaje enviado desde IZZI PARKING",
-            "El usuario con nombre {}  con la direccion {} escribe  lo sieguiente :\n\n{}".format(nombre,email,contenido),
+            email=EmailMessage("Mensaje enviado desde ZOOM-TIC",
+            "El usuario con nombre {}  con la direccion {} escribe  lo siguiente :\n\n{}".format(nombre,email,contenido),
             "",["fikuss2000@gmail.com"],reply_to=[email])
             try: 
                 email.send()

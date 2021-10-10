@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'servicios',
     'colorfield',
     'contacto',
-    'clientes',
+
 ]
 X_FRAME_OPTIONS='SAMEORIGIN'
 MIDDLEWARE = [

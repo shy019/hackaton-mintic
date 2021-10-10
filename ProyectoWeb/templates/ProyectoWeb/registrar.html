@@ -8,7 +8,7 @@
 <form method="post" class ="container"><FONT COLOR="white">
 
     {%csrf_token %}
-    {{ form.as_p}}
+    {{ form.as_ul}}
     <button type="submit" class="registerbtn">Registrar</button>
   </FONT>
 </form>
@@ -16,10 +16,11 @@
 <form action="action_page.php"><FONT COLOR="white">
     <div class="container">
 
-      {% if message %}   
+      {% if message %}  
+      <p>hola</p> 
             {% for  message in messages %}
           <div class="section-content"  {{message.tags}}
-              {{messages}}>
+              {{message}}>
           </div>
       {% endfor %}
       {%endif%}
