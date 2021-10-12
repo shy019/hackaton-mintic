@@ -1,0 +1,40 @@
+
+{% extends "ProyectoWeb/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" class ="container"><FONT COLOR="white">
+
+    {%csrf_token %}
+    {{ form.as_ul}}
+    <button type="submit" class="registerbtn">Registrar</button>
+  </FONT>
+</form>
+
+<form action="action_page.php"><FONT COLOR="white">
+    <div class="container">
+
+      {% if message %}  
+      <p>hola</p> 
+            {% for  message in messages %}
+          <div class="section-content"  {{message.tags}}
+              {{message}}>
+          </div>
+      {% endfor %}
+      {%endif%}
+
+      <p>Al crear una cuenta, acepta nuestros <a href="#">Terminos y condiciones</a>.</p>
+    </div>
+  
+    <div class="container signin">
+      <p><FONT COLOR="black">¿Ya tienes una cuenta creada?</FONT> <a href="/admin">Inicia sesion</a>.</p>
+    </div>
+  </FONT>
+  </form>
+
+    {% endblock %}
+
+
+
